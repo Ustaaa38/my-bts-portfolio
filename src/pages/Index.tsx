@@ -1,3 +1,4 @@
+
 import { useEffect } from 'react';
 import Navigation from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
@@ -28,13 +29,22 @@ const Index = () => {
     <div className="min-h-screen">
       <Navigation />
       
-      {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-blue-50 to-white pt-16">
-        <div className="text-center px-4">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+      {/* Hero Section with Background Image */}
+      <section 
+        className="min-h-screen flex items-center justify-center pt-16 relative"
+        style={{
+          backgroundImage: 'url(https://remeng.rosselcdn.net/sites/default/files/dpistyles_v2/ena_16_9_extra_big/2024/04/19/node_591655/14211810/public/2024/04/19/16141220.jpeg?itok=qoS8ndhh1713525041)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div className="text-center px-4 relative z-10">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
             Portfolio BTS SIO SISR
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
             Étudiant passionné par l'administration des réseaux et la cybersécurité
           </p>
           <Button className="bg-primary hover:bg-primary/90">
