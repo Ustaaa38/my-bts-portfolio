@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import Navigation from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
@@ -108,11 +107,15 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-6">
             {[
               { title: "Remplacement parc informatique", date: "01/01/2025 - 28/02/2025" },
-              { title: "Configuration réseau", date: "19/02/2025 - 21/02/2025" },
+              { title: "Configuration et installation de deux cœurs de réseau", date: "19/02/2025 - 21/02/2025" },
               { title: "Installation serveur FOG", date: "02/12/2024 - 07/02/2025" },
               { title: "TP RGPD", date: "09/12/2024 - 13/12/2024" },
-              { title: "Serveur de messagerie", date: "09/12/2024 - 13/12/2024" },
-              { title: "Audit cybersécurité", date: "11/10/2024 - 09/12/2024" }
+              { title: "Serveur de messagerie mail", date: "09/12/2024 - 13/12/2024" },
+              { title: "Audit cybersécurité", date: "11/10/2024 - 09/12/2024" },
+              { title: "TP DNS", date: "18/11/2024 - 09/12/2024" },
+              { title: "Service de haute disponibilité", date: "04/11/2024 - 15/11/2024" },
+              { title: "Multiples TP Docker", date: "(dates multiples)" },
+              { title: "TP NAS", date: "14/10/2024 - 18/10/2024" }
             ].map((project, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-sm">
                 <h3 className="text-lg font-semibold mb-2">{project.title}</h3>
