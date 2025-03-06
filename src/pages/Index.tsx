@@ -93,8 +93,19 @@ const Index = () => {
           <h2 className="text-3xl font-bold mb-12 text-center">Expériences Professionnelles</h2>
           <div className="space-y-8">
             <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-2">Stage - Première année (Kapsaloon)</h3>
-              <p className="text-gray-500 mb-4">5 semaines - Mars 2024</p>
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 rounded-full overflow-hidden mr-4 border-2 border-primary flex-shrink-0">
+                  <img 
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmvyf1-klWit_tj2AxwUIl7OoLmENBwKzESg&s" 
+                    alt="Kapsaloon logo" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold">Stage - Première année (Kapsaloon)</h3>
+                  <p className="text-gray-500">5 semaines - Mars 2024</p>
+                </div>
+              </div>
               <p className="text-gray-600">
                 Gestion des réseaux et configuration des systèmes internes de l'entreprise.
               </p>
