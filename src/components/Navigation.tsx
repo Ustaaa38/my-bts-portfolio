@@ -25,7 +25,10 @@ const Navigation = () => {
     )}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <span className="text-lg font-semibold">Portfolio</span>
+          <div className="flex items-center">
+            <span className="text-lg font-semibold mr-2">Aslan Gokhan</span>
+            <span className="text-sm text-gray-500">Portfolio</span>
+          </div>
           <div className="hidden md:flex space-x-8">
             <button onClick={() => scrollToSection('about')} className="text-gray-600 hover:text-primary transition-colors">
               À propos
