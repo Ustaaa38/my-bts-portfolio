@@ -25,6 +25,11 @@ const Index = () => {
     return () => observer.disconnect();
   }, []);
 
+  // Function to open image in new tab
+  const openImageInNewTab = (imagePath: string) => {
+    window.open(imagePath, '_blank');
+  };
+
   return (
     <div className="min-h-screen">
       <Navigation />
@@ -47,7 +52,10 @@ const Index = () => {
           <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
             Étudiant passionné par l'administration des réseaux et la cybersécurité
           </p>
-          <Button className="bg-primary hover:bg-primary/90">
+          <Button 
+            className="bg-primary hover:bg-primary/90"
+            onClick={() => openImageInNewTab('public/lovable-uploads/83bd7278-027f-4fc9-8734-a8399742ace8.png')}
+          >
             <img 
               src="public/lovable-uploads/83bd7278-027f-4fc9-8734-a8399742ace8.png" 
               alt="CV" 
@@ -122,7 +130,11 @@ const Index = () => {
               <p className="text-gray-600 mb-4">
                 Kapsaloon Kebab Charleville-Mézières. J'ai réalisé un site web en WordPress et effectué la gestion des réseaux et configuration des systèmes internes de l'entreprise.
               </p>
-              <Button variant="outline" size="sm">
+              <Button 
+                variant="outline" 
+                size="sm"
+                onClick={() => openImageInNewTab('public/lovable-uploads/0e3c0c75-3e8c-4dac-b942-164d42f0973a.png')}
+              >
                 <img 
                   src="public/lovable-uploads/0e3c0c75-3e8c-4dac-b942-164d42f0973a.png" 
                   alt="Attestation première année" 
@@ -148,7 +160,11 @@ const Index = () => {
               <p className="text-gray-600 mb-4">
                 Préfecture des Ardennes. Mon stage de 5 semaines à la préfecture m'a permis de participer à l'audit des systèmes informatiques et d'acquérir des compétences en gestion de réseau et cybersécurité.
               </p>
-              <Button variant="outline" size="sm">
+              <Button 
+                variant="outline" 
+                size="sm"
+                onClick={() => openImageInNewTab('public/lovable-uploads/e10d5719-8337-4c65-85f7-b671d99c097b.png')}
+              >
                 <img 
                   src="public/lovable-uploads/e10d5719-8337-4c65-85f7-b671d99c097b.png" 
                   alt="Attestation deuxième année" 
