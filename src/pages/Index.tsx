@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import Navigation from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
@@ -56,11 +55,7 @@ const Index = () => {
             className="bg-primary hover:bg-primary/90"
             onClick={() => openImageInNewTab('public/lovable-uploads/83bd7278-027f-4fc9-8734-a8399742ace8.png')}
           >
-            <img 
-              src="public/lovable-uploads/83bd7278-027f-4fc9-8734-a8399742ace8.png" 
-              alt="CV" 
-              className="w-5 h-5 mr-2 rounded-full" 
-            />
+            <Eye className="mr-2 h-4 w-4" />
             Voir mon CV
           </Button>
         </div>
@@ -135,11 +130,7 @@ const Index = () => {
                 size="sm"
                 onClick={() => openImageInNewTab('public/lovable-uploads/0e3c0c75-3e8c-4dac-b942-164d42f0973a.png')}
               >
-                <img 
-                  src="public/lovable-uploads/0e3c0c75-3e8c-4dac-b942-164d42f0973a.png" 
-                  alt="Attestation première année" 
-                  className="w-5 h-5 mr-2 rounded-full" 
-                />
+                <Download className="mr-2 h-4 w-4" />
                 Voir l'attestation de stage
               </Button>
             </div>
@@ -165,11 +156,7 @@ const Index = () => {
                 size="sm"
                 onClick={() => openImageInNewTab('public/lovable-uploads/e10d5719-8337-4c65-85f7-b671d99c097b.png')}
               >
-                <img 
-                  src="public/lovable-uploads/e10d5719-8337-4c65-85f7-b671d99c097b.png" 
-                  alt="Attestation deuxième année" 
-                  className="w-5 h-5 mr-2 rounded-full" 
-                />
+                <Download className="mr-2 h-4 w-4" />
                 Voir l'attestation de stage
               </Button>
             </div>
