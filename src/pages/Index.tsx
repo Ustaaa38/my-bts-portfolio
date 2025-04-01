@@ -48,7 +48,11 @@ const Index = () => {
             Étudiant passionné par l'administration des réseaux et la cybersécurité
           </p>
           <Button className="bg-primary hover:bg-primary/90">
-            <Eye className="mr-2 h-4 w-4" />
+            <img 
+              src="public/lovable-uploads/83bd7278-027f-4fc9-8734-a8399742ace8.png" 
+              alt="CV" 
+              className="w-5 h-5 mr-2 rounded-full" 
+            />
             Voir mon CV
           </Button>
         </div>
@@ -119,7 +123,11 @@ const Index = () => {
                 Kapsaloon Kebab Charleville-Mézières. J'ai réalisé un site web en WordPress et effectué la gestion des réseaux et configuration des systèmes internes de l'entreprise.
               </p>
               <Button variant="outline" size="sm">
-                <Eye className="mr-2 h-4 w-4" />
+                <img 
+                  src="public/lovable-uploads/0e3c0c75-3e8c-4dac-b942-164d42f0973a.png" 
+                  alt="Attestation première année" 
+                  className="w-5 h-5 mr-2 rounded-full" 
+                />
                 Voir l'attestation de stage
               </Button>
             </div>
@@ -141,7 +149,11 @@ const Index = () => {
                 Préfecture des Ardennes. Mon stage de 5 semaines à la préfecture m'a permis de participer à l'audit des systèmes informatiques et d'acquérir des compétences en gestion de réseau et cybersécurité.
               </p>
               <Button variant="outline" size="sm">
-                <Eye className="mr-2 h-4 w-4" />
+                <img 
+                  src="public/lovable-uploads/e10d5719-8337-4c65-85f7-b671d99c097b.png" 
+                  alt="Attestation deuxième année" 
+                  className="w-5 h-5 mr-2 rounded-full" 
+                />
                 Voir l'attestation de stage
               </Button>
             </div>
