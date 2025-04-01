@@ -1,7 +1,8 @@
+
 import { useEffect } from 'react';
 import Navigation from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
-import { Download, ExternalLink, Eye } from 'lucide-react';
+import { Download, ExternalLink, Eye, BookOpenCheck } from 'lucide-react';
 
 const Index = () => {
   useEffect(() => {
@@ -51,13 +52,22 @@ const Index = () => {
           <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
             Étudiant passionné par l'administration des réseaux et la cybersécurité
           </p>
-          <Button 
-            className="bg-primary hover:bg-primary/90"
-            onClick={() => openImageInNewTab('public/lovable-uploads/83bd7278-027f-4fc9-8734-a8399742ace8.png')}
-          >
-            <Eye className="mr-2 h-4 w-4" />
-            Voir mon CV
-          </Button>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <Button 
+              className="bg-primary hover:bg-primary/90"
+              onClick={() => openImageInNewTab('public/lovable-uploads/83bd7278-027f-4fc9-8734-a8399742ace8.png')}
+            >
+              <Eye className="mr-2 h-4 w-4" />
+              Voir mon CV
+            </Button>
+            <Button 
+              className="bg-primary hover:bg-primary/90"
+              onClick={() => openImageInNewTab('public/lovable-uploads/46b75f71-9698-4418-a0b0-6b8a8ba6e88b.png')}
+            >
+              <BookOpenCheck className="mr-2 h-4 w-4" />
+              Voir mon portefeuille de compétences
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -128,7 +138,7 @@ const Index = () => {
               <Button 
                 variant="outline" 
                 size="sm"
-                onClick={() => openImageInNewTab('public/lovable-uploads/0e3c0c75-3e8c-4dac-b942-164d42f0973a.png')}
+                onClick={() => openImageInNewTab('public/lovable-uploads/997b835c-7ae4-4281-9a81-81015ae03075.png')}
               >
                 <Download className="mr-2 h-4 w-4" />
                 Voir l'attestation de stage
@@ -154,7 +164,7 @@ const Index = () => {
               <Button 
                 variant="outline" 
                 size="sm"
-                onClick={() => openImageInNewTab('public/lovable-uploads/e10d5719-8337-4c65-85f7-b671d99c097b.png')}
+                onClick={() => openImageInNewTab('public/lovable-uploads/753c9f31-66c7-4ead-a7c3-ebc2af0a0a8c.png')}
               >
                 <Download className="mr-2 h-4 w-4" />
                 Voir l'attestation de stage
